@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    padding: 24px;
+    max-width: 360px;
+    width: 100%;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+#preco_diaria {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+form > div {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+form p {
+    margin-bottom: 12px;
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+button {
+    background: linear-gradient(to right, #ff385c, #e61e4d);
+    color: #fff;
+    font-weight: 600;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to right, #e61e4d, #ff385c);
+}
+
+div > p {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #717171;
+    margin: 16px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 12px 0;
+}
+
+#total {
+    font-weight: 550;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 16px;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
