@@ -2,10 +2,10 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #e2e0e0;
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 10rem;
 }
 
 section {
@@ -17,54 +17,65 @@ section {
     width: 100%;
 }
 
-h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 16px;
+h3.noite {
+    font-size: 1.15rem;
+    font-weight: 450;
 }
 
 #preco_diaria {
     font-size: 1.5rem;
-    font-weight: 700;
-    margin-right: 4px;
+    font-weight: 650;
+    margin-right: 6px;
 }
 
 form > div {
     display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
 }
 
-form p {
-    margin-bottom: 12px;
+form > div p {
+    flex: 1;
+    margin: 0;
 }
 
 label {
-    font-size: 0.75rem;
-    font-weight: 600;
+    font-size: 0.70rem;
+    font-weight: 500;
     display: block;
-    margin-bottom: 4px;
-    text-transform: uppercase;
+    border-right: 1px solid #ccc;
 }
 
-input[type="date"],
-select {
+input[type="date"] {
+    border: none;
+    border-right: 1px solid #ccc;
+    border-radius: 0;
+    padding: 14px;
+    font-size: 0.9rem;
     width: 100%;
-    padding: 10px;
+    box-sizing: border-box;
+}
+
+select {
+    padding: 14px;
+    border-radius: 12px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    margin-top: 6px;
     font-size: 0.95rem;
 }
 
 button {
     background: linear-gradient(to right, #ff385c, #e61e4d);
     color: #fff;
-    font-weight: 600;
+    font-weight: 650;
     padding: 12px;
     border: none;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
+    padding: 17px;
     width: 100%;
 }
 
@@ -73,10 +84,9 @@ button:hover {
 }
 
 div > p {
-    font-size: 0.85rem;
+    font-size: 0.90rem;
     text-align: center;
-    color: #717171;
-    margin: 16px 0;
+    margin: 22px 0;
 }
 
 ul {
@@ -89,27 +99,16 @@ li {
     display: flex;
     justify-content: space-between;
     font-size: 0.95rem;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 hr {
     border: none;
-    border-top: 1px solid #ddd;
-    margin: 12px 0;
+    border-top: 1px solid #cecccc;
+    margin: 25px 0;
 }
 
-#total {
+li.total {
     font-weight: 550;
-    font-size: 1.1rem;
-}
-
-@media (max-width: 480px) {
-    section {
-        padding: 16px;
-    }
-
-    button {
-        font-size: 0.95rem;
-        padding: 10px;
-    }
+    font-size: 1rem;
 }
